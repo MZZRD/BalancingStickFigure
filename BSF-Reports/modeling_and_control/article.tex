@@ -1,0 +1,73 @@
+\documentclass[twocolumn]{layout/tudelft-aiaa}
+
+%% Additional packages and commands
+\renewcommand{\deg}{\si{\degree}\xspace}
+
+%% Defining title, author and affiliation
+\title{Modelling and Control of a Balancing Stick Figure}
+\author{M.J.M. ten Voorde}
+\affil{Personal Projects}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% Begin of document %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\AlwaysPagewidth{
+
+\maketitle
+
+%% Abstract
+
+\begin{abstract}
+    \noindent  The abstract should appear at the beginning of your paper and it should not exceed 250 words. It should be one paragraph long and it should be comprehensible on its own, separately from the rest of the article. It should concisely indicate the background, scientific gap, research question or purpose, method, main results and conclusions dealt with in the article. Do not cite references in the abstract. The abstract is bold and indented 3 picas (1/2”) on each side by default.
+\end{abstract}
+
+}
+
+%% Nomenclature
+
+\renewcommand{\nompreamble}{\emph{Use this section to provide a list of all symbols used in the report. Provide a concise description. For example:}} %
+
+\printnomenclature[\nomequalsign]
+
+\nomenclature{$A$}{amplitude of oscillation}
+\nomenclature{$C_p$}{pressure coefficient}
+\nomenclature{$C_x$}{force coefficient in the x direction}
+\nomenclature{$C_y$}{force coefficient in the y direction}
+\nomenclature{$c$}{chord}
+\nomenclature{$dt$}{time step}
+\nomenclature{$F_x$}{X component of the resultant pressure force acting on the vehicle}
+\nomenclature{$F_y$}{Y component of the resultant pressure force acting on the vehicle}
+\nomenclature{$f, g$}{generic functions}
+\nomenclature{$h$}{height}
+\nomenclature{$i$}{time index during navigation}
+
+%% Main body
+
+\input{introduction}
+
+\input{methodology}
+
+\input{results-discussion}
+
+\input{conclusion}
+
+\section*{Acknowledgments}
+
+Use this section to thank anyone besides the main author(s) who has contributed to the paper. Avoid expressions such as “One of us (S.B.A.) would like to thank…” Instead, write “F. A. Author thanks…”.
+
+%% Bibliography
+
+\renewcommand{\bibpreamble}{For a full documentation of the references, please refer to the sample.bib file. You can delete this text/command safely in main.tex at line 63. \cite{example-article,example-article-published-online,example-inbook,example-inbook-series-with-editor,example-inproceedings,example-proceedings,example-report,example-paper,example-phdthesis}}
+
+\bibliography{article}
+
+%% Appendix
+
+\section*{Appendix}
+
+An appendix, if needed, should appear at the end of the article.
+
+\end{document}
