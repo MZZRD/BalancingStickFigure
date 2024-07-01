@@ -173,3 +173,6 @@ article.pdf
 *.out
 *.synctex.gz
 *.xdv
+
+# Ignoring temporary directories and its files
+/_temp
