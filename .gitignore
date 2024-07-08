@@ -175,4 +175,4 @@ article.pdf
 *.xdv
 
 # Ignoring temporary directories and its files
-/_temp
+_temp

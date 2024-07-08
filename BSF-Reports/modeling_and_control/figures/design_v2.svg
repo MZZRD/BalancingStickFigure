@@ -24,14 +24,14 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showguides="true"
-     inkscape:zoom="5.6568543"
-     inkscape:cx="578.50173"
-     inkscape:cy="661.49839"
-     inkscape:window-width="959"
-     inkscape:window-height="1052"
+     inkscape:zoom="8"
+     inkscape:cx="200.6875"
+     inkscape:cy="1046.75"
+     inkscape:window-width="1906"
+     inkscape:window-height="1034"
      inkscape:window-x="0"
      inkscape:window-y="0"
-     inkscape:window-maximized="0"
+     inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
      id="defs1">
@@ -72,6 +72,25 @@
          style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
          d="M 5.77,0 -2.88,5 V -5 Z"
          id="path135-6" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Triangle-5-8"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135-6-5" />
     </marker>
   </defs>
   <g
@@ -1431,6 +1450,47 @@
        cy="184.71875"
        r="0.5" />
     <circle
+       style="fill:#000000;fill-opacity:0;stroke-width:0.499999"
+       id="path8-9-8-1-6-5-9-2-79-4"
+       cx="142.86972"
+       cy="219.70886"
+       r="2" />
+    <g
+       id="g3"
+       transform="translate(14.415802,10.77136)">
+      <g
+         id="g11-6-0-1-3-7-0-3"
+         transform="translate(44.266533,118.79265)"
+         style="fill:#333333;fill-opacity:1"
+         inkscape:transform-center-y="3.9999965">
+        <rect
+           style="fill:#333333;fill-opacity:1;stroke-width:0.499999"
+           id="rect5-0-5-9-5-7-7-0-7-0-9-6"
+           width="4"
+           height="8"
+           x="94.937393"
+           y="90.144852" />
+        <circle
+           style="fill:#333333;fill-opacity:1;stroke-width:0.499999"
+           id="path8-3-7-0-3-9-4-3-1"
+           cx="96.937393"
+           cy="90.144852"
+           r="2" />
+        <circle
+           style="fill:#333333;fill-opacity:1;stroke-width:0.499999"
+           id="path8-3-7-0-3-9-4-3-1-3"
+           cx="96.937393"
+           cy="98.144852"
+           r="2" />
+      </g>
+      <circle
+         style="fill:#f9f9f9;stroke-width:0.499999"
+         id="path1-3-56"
+         cx="141.20393"
+         cy="208.9375"
+         r="0.5" />
+    </g>
+    <circle
        style="fill:#333333;fill-opacity:1;stroke-width:0.499997"
        id="path6-9-2-4-4-3-0-3-0-1"
        cx="140.86972"
@@ -1549,14 +1609,83 @@
        cx="162.42665"
        cy="184.71875"
        r="0.5" />
-    <path
-       style="fill:#ff0000;stroke:#f9f9f9;stroke-width:0.063;stroke-linecap:round;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#Triangle-5)"
-       d="m 160.30164,172.71873 v -0.81718"
-       id="path6-7" />
-    <path
-       style="fill:none;stroke:#f9f9f9;stroke-width:0.063;stroke-linecap:round;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#Triangle-5)"
-       d="m 160.30164,172.71873 h 0.81718"
-       id="path9-8" />
+    <g
+       id="g1">
+      <path
+         style="fill:#ff0000;stroke:#f9f9f9;stroke-width:0.063;stroke-linecap:round;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#Triangle-5)"
+         d="m 160.30164,172.71873 v -0.81718"
+         id="path6-7" />
+      <path
+         style="fill:none;stroke:#f9f9f9;stroke-width:0.063;stroke-linecap:round;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#Triangle-5)"
+         d="m 160.30164,172.71873 h 0.81718"
+         id="path9-8" />
+    </g>
+    <g
+       id="g7">
+      <g
+         id="g6">
+        <rect
+           style="fill:#333333;fill-opacity:1;stroke-width:0.499999"
+           id="rect7-2-7-2-4-7-6-1-2-1"
+           width="12.75"
+           height="4"
+           x="117.24472"
+           y="215.70886" />
+        <circle
+           style="fill:#333333;fill-opacity:1;stroke-width:0.499999"
+           id="path8-3-7-0-3-9-4-3-1-7-3"
+           cx="117.24472"
+           cy="217.70886"
+           r="2" />
+        <circle
+           style="fill:#333333;fill-opacity:1;stroke-width:0.499999"
+           id="path8-3-7-0-3-9-4-3-1-7-3-7"
+           cx="129.99472"
+           cy="217.70886"
+           r="2" />
+      </g>
+      <circle
+         style="fill:#333333;fill-opacity:1;stroke-width:0.499997"
+         id="path6-9-2-4-4-3-0-3-0-4"
+         cx="123.61972"
+         cy="211.70886"
+         r="4" />
+      <g
+         id="g5"
+         transform="translate(-0.12499202)">
+        <rect
+           style="fill:#333333;stroke-width:0.499999"
+           id="rect6-2-6-3-0-7-7-4-7-6-8"
+           width="8.25"
+           height="13.999999"
+           x="119.61971"
+           y="215.70886" />
+        <circle
+           style="fill:#333333;fill-opacity:1;stroke-width:0.499999"
+           id="path8-19-5-2-7-2-6-0"
+           cx="121.61971"
+           cy="229.70886"
+           r="2" />
+        <circle
+           style="fill:#333333;fill-opacity:1;stroke-width:0.499999"
+           id="path8-9-6-8-6-6-2-1-3"
+           cx="125.86971"
+           cy="229.70886"
+           r="2" />
+      </g>
+      <g
+         id="g2"
+         transform="translate(-37.105421,45.413634)">
+        <path
+           style="fill:#ff0000;stroke:#f9f9f9;stroke-width:0.063;stroke-linecap:round;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#Triangle-5-8)"
+           d="m 160.30164,172.71873 v -0.81718"
+           id="path6-7-8" />
+        <path
+           style="fill:none;stroke:#f9f9f9;stroke-width:0.063;stroke-linecap:round;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#Triangle-5-8)"
+           d="m 160.30164,172.71873 h 0.81718"
+           id="path9-8-8" />
+      </g>
+    </g>
     <circle
        style="fill:#ffcc00;fill-opacity:1;stroke-width:0.499999"
        id="path8-9-8-1-6-5-9-2-79-6-7"
@@ -1583,5 +1712,452 @@
        height="7.0000157"
        x="158.17665"
        y="172.71873" />
+    <g
+       id="g8-2-0-2-7-1-5-5"
+       transform="translate(1.2786782,136.24735)"
+       style="fill:#333333;fill-opacity:1"
+       inkscape:transform-center-x="2.254965e-06"
+       inkscape:transform-center-y="3.9999895">
+      <rect
+         style="fill:#333333;fill-opacity:1;stroke-width:0.499999"
+         id="rect5-4-4-5-3-0-6-0-5-7-3-3"
+         width="4"
+         height="12"
+         x="66.50914"
+         y="100.79194"
+         inkscape:transform-center-y="6"
+         ry="2"
+         rx="2" />
+      <circle
+         style="fill:#333333;fill-opacity:1;stroke-width:0.499999"
+         id="path8-1-7-6-2-9-5-5-5"
+         cx="68.50914"
+         cy="102.79194"
+         r="2" />
+    </g>
+    <g
+       id="g9-3-4-9-7-1-6-6"
+       transform="rotate(-15,581.25384,233.2223)"
+       style="fill:#333333;fill-opacity:1"
+       inkscape:transform-center-y="3.8637041"
+       inkscape:transform-center-x="-1.0352775">
+      <rect
+         style="fill:#333333;fill-opacity:1;stroke-width:0.499999"
+         id="rect5-1-0-4-2-1-6-0-8-74-2-2"
+         width="4"
+         height="12"
+         x="87.960052"
+         y="104.46394"
+         ry="2"
+         rx="2" />
+      <circle
+         style="fill:#333333;fill-opacity:1;stroke-width:0.499999"
+         id="path8-7-1-2-9-5-17-9-9"
+         cx="89.960052"
+         cy="106.46394"
+         r="2" />
+    </g>
+    <g
+       id="g10-9-8-9-3-1-1-1"
+       transform="rotate(75,-30.69374,157.00775)"
+       style="fill:#333333;fill-opacity:1"
+       inkscape:transform-center-x="3.8637043"
+       inkscape:transform-center-y="1.0352733">
+      <rect
+         style="fill:#333333;fill-opacity:1;stroke-width:0.499999"
+         id="rect5-2-4-6-0-9-4-3-1-2-2"
+         width="4"
+         height="12"
+         x="60.549191"
+         y="83.431343"
+         ry="2"
+         rx="2" />
+      <circle
+         style="fill:#333333;fill-opacity:1;stroke-width:0.499999"
+         id="path8-2-5-6-5-8-1-7-7"
+         cx="62.549191"
+         cy="85.431343"
+         r="2" />
+    </g>
+    <g
+       id="g11-6-0-1-3-7-0-0"
+       transform="rotate(-105,136.46134,164.76907)"
+       style="fill:#333333;fill-opacity:1"
+       inkscape:transform-center-y="-1.0352729"
+       inkscape:transform-center-x="-3.8637032">
+      <rect
+         style="fill:#333333;fill-opacity:1;stroke-width:0.499999"
+         id="rect5-0-5-9-5-7-7-0-7-0-9-9"
+         width="4"
+         height="12"
+         x="91.978188"
+         y="87.644844"
+         ry="2"
+         rx="2" />
+      <circle
+         style="fill:#333333;fill-opacity:1;stroke-width:0.499999"
+         id="path8-3-7-0-3-9-4-3-3"
+         cx="93.978188"
+         cy="89.644844"
+         r="2" />
+    </g>
+    <g
+       id="g14-4-6-6"
+       transform="rotate(-15,438.90886,159.62933)">
+      <circle
+         style="fill:#333333;fill-opacity:1;stroke-width:0.499997"
+         id="path6-9-2-4-4-3-0-3-0-0"
+         cx="63.812504"
+         cy="122.79791"
+         r="4" />
+      <rect
+         style="fill:#333333;stroke-width:0.499999"
+         id="rect6-2-6-3-0-7-7-4-7-6-6"
+         width="8.25"
+         height="13.999999"
+         x="59.8125"
+         y="126.79791" />
+      <rect
+         style="fill:#333333;fill-opacity:1;stroke-width:0.499999"
+         id="rect7-2-7-2-4-7-6-1-2-2"
+         width="16.75"
+         height="4"
+         x="55.5625"
+         y="126.79791"
+         ry="2"
+         rx="2" />
+      <circle
+         style="fill:#333333;fill-opacity:1;stroke-width:0.499999"
+         id="path8-19-5-2-7-2-6-6"
+         cx="61.8125"
+         cy="140.79791"
+         r="2" />
+      <circle
+         style="fill:#333333;fill-opacity:1;stroke-width:0.499999"
+         id="path8-9-6-8-6-6-2-1-1"
+         cx="66.0625"
+         cy="140.79791"
+         r="2" />
+      <circle
+         style="fill:#333333;fill-opacity:1;stroke-width:0.499999"
+         id="path8-9-3-2-2-4-0-0-8-8"
+         cx="70.3125"
+         cy="128.79791"
+         r="2" />
+      <circle
+         style="fill:#000000;fill-opacity:0;stroke-width:0.499999"
+         id="path8-9-8-1-6-5-9-2-79-7"
+         cx="57.5625"
+         cy="128.79791"
+         r="2" />
+    </g>
+    <circle
+       style="fill:#f9f9f9;stroke-width:0.499999"
+       id="path1-9"
+       cx="1.2919351"
+       cy="236.95665"
+       r="0.5"
+       transform="rotate(-15)" />
+    <circle
+       style="fill:#f9f9f9;stroke-width:0.499999"
+       id="path1-3-2"
+       cx="14.041935"
+       cy="236.95663"
+       r="0.5"
+       transform="rotate(-15)" />
+    <circle
+       style="fill:#f9f9f9;stroke-width:0.499999"
+       id="path1-2-0"
+       cx="5.541935"
+       cy="248.95665"
+       r="0.5"
+       transform="rotate(-15)" />
+    <circle
+       style="fill:#f9f9f9;stroke-width:0.499999"
+       id="path1-7-2"
+       cx="9.791935"
+       cy="248.95665"
+       r="0.5"
+       transform="rotate(-15)" />
+    <g
+       id="g3-9"
+       transform="translate(10.165802,22.77136)">
+      <g
+         id="g11-6-0-1-3-7-0-3-2"
+         transform="translate(44.266533,118.79265)"
+         style="fill:#333333;fill-opacity:1"
+         inkscape:transform-center-y="3.9999965">
+        <rect
+           style="fill:#333333;fill-opacity:1;stroke-width:0.499999"
+           id="rect5-0-5-9-5-7-7-0-7-0-9-6-6"
+           width="4"
+           height="8"
+           x="94.937393"
+           y="90.144852" />
+        <circle
+           style="fill:#333333;fill-opacity:1;stroke-width:0.499999"
+           id="path8-3-7-0-3-9-4-3-1-6"
+           cx="96.937393"
+           cy="90.144852"
+           r="2" />
+        <circle
+           style="fill:#333333;fill-opacity:1;stroke-width:0.499999"
+           id="path8-3-7-0-3-9-4-3-1-3-49"
+           cx="96.937393"
+           cy="98.144852"
+           r="2" />
+      </g>
+      <circle
+         style="fill:#f9f9f9;stroke-width:0.499999"
+         id="path1-3-56-5"
+         cx="141.20393"
+         cy="208.9375"
+         r="0.5" />
+    </g>
+    <g
+       id="g3-1"
+       transform="translate(5.9158025,22.77136)">
+      <g
+         id="g11-6-0-1-3-7-0-3-7"
+         transform="translate(44.266533,118.79265)"
+         style="fill:#333333;fill-opacity:1"
+         inkscape:transform-center-y="3.9999965">
+        <rect
+           style="fill:#333333;fill-opacity:1;stroke-width:0.499999"
+           id="rect5-0-5-9-5-7-7-0-7-0-9-6-2"
+           width="4"
+           height="8"
+           x="94.937393"
+           y="90.144852" />
+        <circle
+           style="fill:#333333;fill-opacity:1;stroke-width:0.499999"
+           id="path8-3-7-0-3-9-4-3-1-7"
+           cx="96.937393"
+           cy="90.144852"
+           r="2" />
+        <circle
+           style="fill:#333333;fill-opacity:1;stroke-width:0.499999"
+           id="path8-3-7-0-3-9-4-3-1-3-2"
+           cx="96.937393"
+           cy="98.144852"
+           r="2" />
+      </g>
+      <circle
+         style="fill:#f9f9f9;stroke-width:0.499999"
+         id="path1-3-56-2"
+         cx="141.20393"
+         cy="208.9375"
+         r="0.5" />
+    </g>
+    <g
+       id="g3-8"
+       transform="translate(1.6657945,10.771362)">
+      <g
+         id="g11-6-0-1-3-7-0-3-8"
+         transform="translate(44.266533,118.79265)"
+         style="fill:#333333;fill-opacity:1"
+         inkscape:transform-center-y="3.9999965">
+        <rect
+           style="fill:#333333;fill-opacity:1;stroke-width:0.499999"
+           id="rect5-0-5-9-5-7-7-0-7-0-9-6-4"
+           width="4"
+           height="8"
+           x="94.937393"
+           y="90.144852" />
+        <circle
+           style="fill:#333333;fill-opacity:1;stroke-width:0.499999"
+           id="path8-3-7-0-3-9-4-3-1-31"
+           cx="96.937393"
+           cy="90.144852"
+           r="2" />
+        <circle
+           style="fill:#333333;fill-opacity:1;stroke-width:0.499999"
+           id="path8-3-7-0-3-9-4-3-1-3-4"
+           cx="96.937393"
+           cy="98.144852"
+           r="2" />
+      </g>
+      <circle
+         style="fill:#f9f9f9;stroke-width:0.499999"
+         id="path1-3-56-9"
+         cx="141.20393"
+         cy="208.9375"
+         r="0.5" />
+    </g>
+    <g
+       id="g8-2-0-2-7-1-5-5-3"
+       transform="translate(-13.205119,175.75818)"
+       style="fill:#333333;fill-opacity:1"
+       inkscape:transform-center-x="2.254965e-06"
+       inkscape:transform-center-y="3.9999895">
+      <rect
+         style="fill:#333333;fill-opacity:1;stroke-width:0.499999"
+         id="rect5-4-4-5-3-0-6-0-5-7-3-3-5"
+         width="4"
+         height="12"
+         x="66.50914"
+         y="100.79194"
+         inkscape:transform-center-y="6"
+         ry="2"
+         rx="2" />
+      <circle
+         style="fill:#333333;fill-opacity:1;stroke-width:0.499999"
+         id="path8-1-7-6-2-9-5-5-5-6"
+         cx="68.50914"
+         cy="102.79194"
+         r="2" />
+    </g>
+    <g
+       id="g10-9-8-9-3-1-1-1-2"
+       transform="rotate(75,-63.681399,167.32534)"
+       style="fill:#333333;fill-opacity:1"
+       inkscape:transform-center-x="3.8637043"
+       inkscape:transform-center-y="1.0352733">
+      <rect
+         style="fill:#333333;fill-opacity:1;stroke-width:0.499999"
+         id="rect5-2-4-6-0-9-4-3-1-2-2-7"
+         width="4"
+         height="12"
+         x="60.549191"
+         y="83.431343"
+         ry="2"
+         rx="2" />
+      <circle
+         style="fill:#333333;fill-opacity:1;stroke-width:0.499999"
+         id="path8-2-5-6-5-8-1-7-7-0"
+         cx="62.549191"
+         cy="85.431343"
+         r="2" />
+    </g>
+    <g
+       id="g11-6-0-1-3-7-0-0-9"
+       transform="rotate(-105,144.37831,190.08139)"
+       style="fill:#333333;fill-opacity:1"
+       inkscape:transform-center-y="-1.0352729"
+       inkscape:transform-center-x="-3.8637032">
+      <rect
+         style="fill:#333333;fill-opacity:1;stroke-width:0.499999"
+         id="rect5-0-5-9-5-7-7-0-7-0-9-9-3"
+         width="4"
+         height="12"
+         x="91.978188"
+         y="87.644844"
+         ry="2"
+         rx="2" />
+      <circle
+         style="fill:#333333;fill-opacity:1;stroke-width:0.499999"
+         id="path8-3-7-0-3-9-4-3-3-6"
+         cx="93.978188"
+         cy="89.644844"
+         r="2" />
+    </g>
+    <g
+       id="g14-4-6-6-0"
+       transform="rotate(-15,581.72425,234.39243)">
+      <circle
+         style="fill:#333333;fill-opacity:1;stroke-width:0.499997"
+         id="path6-9-2-4-4-3-0-3-0-0-6"
+         cx="63.812504"
+         cy="122.79791"
+         r="4" />
+      <rect
+         style="fill:#333333;stroke-width:0.499999"
+         id="rect6-2-6-3-0-7-7-4-7-6-6-2"
+         width="8.25"
+         height="13.999999"
+         x="59.8125"
+         y="126.79791" />
+      <rect
+         style="fill:#333333;fill-opacity:1;stroke-width:0.499999"
+         id="rect7-2-7-2-4-7-6-1-2-2-6"
+         width="16.75"
+         height="4"
+         x="55.5625"
+         y="126.79791"
+         ry="2"
+         rx="2" />
+      <circle
+         style="fill:#333333;fill-opacity:1;stroke-width:0.499999"
+         id="path8-19-5-2-7-2-6-6-1"
+         cx="61.8125"
+         cy="140.79791"
+         r="2" />
+      <circle
+         style="fill:#333333;fill-opacity:1;stroke-width:0.499999"
+         id="path8-9-6-8-6-6-2-1-1-8"
+         cx="66.0625"
+         cy="140.79791"
+         r="2" />
+      <circle
+         style="fill:#333333;fill-opacity:1;stroke-width:0.499999"
+         id="path8-9-3-2-2-4-0-0-8-8-7"
+         cx="70.3125"
+         cy="128.79791"
+         r="2" />
+      <circle
+         style="fill:#000000;fill-opacity:0;stroke-width:0.499999"
+         id="path8-9-8-1-6-5-9-2-79-7-9"
+         cx="57.5625"
+         cy="128.79791"
+         r="2" />
+    </g>
+    <circle
+       style="fill:#f9f9f9;stroke-width:0.499999"
+       id="path1-9-2"
+       cx="-22.924494"
+       cy="271.3725"
+       r="0.5"
+       transform="rotate(-15)" />
+    <circle
+       style="fill:#f9f9f9;stroke-width:0.499999"
+       id="path1-3-2-0"
+       cx="-10.174495"
+       cy="271.3725"
+       r="0.5"
+       transform="rotate(-15)" />
+    <rect
+       style="fill:#333333;stroke:none;stroke-width:0.793751;stroke-linecap:round;fill-opacity:1"
+       id="rect2"
+       width="32.536072"
+       height="1"
+       x="39.035984"
+       y="288.55011" />
+    <path
+       style="fill:#333333;fill-opacity:1;stroke:#ff0000;stroke-width:0.1;stroke-linecap:butt;stroke-dasharray:none"
+       d="m 53.733144,264.47718 3.623468,13.52296"
+       id="path2" />
+    <path
+       style="fill:#0000ff;fill-opacity:1;stroke:#0000ff;stroke-width:0.1;stroke-linecap:butt;stroke-dasharray:none"
+       d="M 55.304017,288.55011 V 270.33976"
+       id="path3" />
+    <circle
+       style="fill:#0000ff;stroke-width:0.499999"
+       id="path1-2-0-2-2"
+       cx="-16.5495"
+       cy="275.44189"
+       r="0.5"
+       transform="rotate(-15)" />
+    <path
+       style="fill:#f9f9f9;fill-opacity:1;stroke:#0000ff;stroke-width:0.1;stroke-linecap:butt;stroke-dasharray:none"
+       d="m 59.409208,277.45015 -4.105191,-7.11039"
+       id="path4" />
+    <circle
+       style="fill:#0000ff;stroke-width:0.499999"
+       id="path1-7-2-3"
+       cx="-14.424495"
+       cy="283.3725"
+       r="0.5"
+       transform="rotate(-15)" />
+    <circle
+       style="fill:#0000ff;stroke-width:0.499999"
+       id="path1-2-0-2-2-6"
+       cx="-14.424498"
+       cy="287.3725"
+       r="0.5"
+       transform="rotate(-15)" />
+    <path
+       style="fill:#ff00ff;fill-opacity:1;stroke:#0000ff;stroke-width:0.1;stroke-linecap:butt;stroke-dasharray:none"
+       d="m 59.409208,277.45015 1.035272,3.86371"
+       id="path5" />
   </g>
 </svg>

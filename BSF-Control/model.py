@@ -1,15 +1,14 @@
 import xml.etree.ElementTree as ET
 import numpy as np
+import matplotlib.pyplot as plt
+
 import mujoco
 import mujoco.viewer
+from mujoco._structs import MjModel, MjData
 
+from utils import arr2str, euler2quat
 
-def arr2str(array) -> str:
-    str_array = ' '.join(map(str, array))
-    return str_array
-
-
-def main() -> str:
+def get_mjmodel_xml() -> str:
     # Base dimensions
     h = 12e-3 # height limb (z-axis) 
     w = 4e-3 # width limb (x-axis)
@@ -65,7 +64,7 @@ def main() -> str:
     ET.SubElement(worldbody, "geom", name="floor", size="0 0 .125", type="plane", material="groundplane")
     
     # The actual model (to seperate)
-    torso = ET.SubElement(worldbody, "body", name="torso", pos="0 0 .1")
+    torso = ET.SubElement(worldbody, "body", name="torso", pos="0 0 0.2209795", euler="0 -15 0")
     ET.SubElement(torso, "joint", type="free")
     ET.SubElement(torso, "geom", name="chest", type="box", size=arr2str(chest_size))
     ET.SubElement(torso, "geom", name="right_sholder", type="cylinder", size=arr2str(joint_size), pos=arr2str(sholder_right_pos), euler="90 0 0")
@@ -78,29 +77,29 @@ def main() -> str:
     ET.SubElement(head, "geom", name="head", type="cylinder", size=arr2str(head_size), euler="90 0 0")
 
     right_arm = ET.SubElement(torso, "body", name="right_arm", pos=arr2str(sholder_right_pos), euler="0 -90 0")
-    ET.SubElement(right_arm, "joint", name="right_arm", type="hinge", axis="0 -1 0", limited="true", range="-90 90")
+    # ET.SubElement(right_arm, "joint", name="right_arm", type="hinge", axis="0 -1 0", limited="true", range="-90 90")
     ET.SubElement(right_arm, "geom", name="right_arm", type="box", size=arr2str(limb_size), pos=arr2str(limb_pos))
     ET.SubElement(right_arm, "geom", name="right_hand", type="cylinder", size=arr2str(joint_size), pos=arr2str(limb_end_pos), euler="90 0 0")
 
     left_arm = ET.SubElement(torso, "body", name="left_arm", pos=arr2str(sholder_left_pos), euler="0 90 0")
-    ET.SubElement(left_arm, "joint", name="left_arm", type="hinge", axis="0 1 0", limited="true", range="-90 90")
+    # ET.SubElement(left_arm, "joint", name="left_arm", type="hinge", axis="0 1 0", limited="true", range="-90 90")
     ET.SubElement(left_arm, "geom", name="left_arm", type="box", size=arr2str(limb_size), pos=arr2str(limb_pos))
     ET.SubElement(left_arm, "geom", name="left_hand", type="cylinder", size=arr2str(joint_size), pos=arr2str(limb_end_pos), euler="90 0 0")
 
-    right_leg = ET.SubElement(torso, "body", name="right_leg", pos=arr2str(hip_right_pos), euler="0 0 0")
+    right_leg = ET.SubElement(torso, "body", name="right_leg", pos=arr2str(hip_right_pos), euler="0 13.0071 0")
     ET.SubElement(right_leg, "joint", name="right_leg", type="hinge", axis="0 -1 0", limited="true", range="-15 90")
     ET.SubElement(right_leg, "geom", name="right_leg", type="box", size=arr2str(limb_size), pos=arr2str(limb_pos))
     ET.SubElement(right_leg, "geom", name="right_foot", type="cylinder", size=arr2str(joint_size), pos=arr2str(limb_end_pos), euler="90 0 0")
 
-    left_leg = ET.SubElement(torso, "body", name="left_leg", pos=arr2str(hip_left_pos), euler="0 0 0")
-    ET.SubElement(left_leg, "joint", name="left_leg", type="hinge", axis="0 1 0", limited="true", range="-15 90")
+    left_leg = ET.SubElement(torso, "body", name="left_leg", pos=arr2str(hip_left_pos), euler="0 15 0")
+    # ET.SubElement(left_leg, "joint", name="left_leg", type="hinge", axis="0 1 0", limited="true", range="-15 90")
     ET.SubElement(left_leg, "geom", name="left_leg", type="box", size=arr2str(limb_size), pos=arr2str(limb_pos))
     ET.SubElement(left_leg, "geom", name="left_foot", type="cylinder", size=arr2str(joint_size), pos=arr2str(limb_end_pos), euler="90 0 0")
 
     actuator = ET.SubElement(mjmodel, "actuator")
-    ET.SubElement(actuator, "motor", name="left_arm", joint="left_arm")
-    ET.SubElement(actuator, "motor", name="right_arm", joint="right_arm")
-    ET.SubElement(actuator, "motor", name="left_leg", joint="left_leg")
+    # ET.SubElement(actuator, "motor", name="left_arm", joint="left_arm")
+    # ET.SubElement(actuator, "motor", name="right_arm", joint="right_arm")
+    # ET.SubElement(actuator, "motor", name="left_leg", joint="left_leg")
     ET.SubElement(actuator, "motor", name="right_leg", joint="right_leg")
 
     # Convert the tree to a xml string
@@ -111,15 +110,51 @@ def main() -> str:
 
 if __name__ == "__main__":
     # Load the model in the viewer
-    mjmodel_xml = main()
+    mjmodel_xml = get_mjmodel_xml()
     mjmodel = mujoco.MjModel.from_xml_string(mjmodel_xml)
     mjdata = mujoco.MjData(mjmodel)
     mujoco.viewer.launch(mjmodel, mjdata)
 
+    
+
+    # angle_offsets = np.linspace(-np.deg2rad(15), np.deg2rad(90), 100001)
+    # com_pos_x = []
+    # for offset in angle_offsets:
+    #     mujoco.mj_resetData(mjmodel, mjdata)
+    #     mjdata.qpos[-1] += offset
+    #     mujoco.mj_forward(mjmodel, mjdata)
+    #     com_pos_x.append(mjdata.subtree_com[1, 0])
+
+    # # Find the angle offset resulting in the lowest error
+    # error = com_pos_x - mjdata.contact[0].pos[0]
+    # idx = np.argmin(np.abs(error))
+    # best_offset = angle_offsets[idx]
+    
+    # # Plot the relationship.
+    # plt.figure(figsize=(10, 6))
+    # plt.plot(angle_offsets, error, linewidth=3)
+    # # Red vertical line at offset corresponding to smallest vertical force.
+    # # plt.axvline(x=best_offset, color="red", linestyle="--")
+    # # Green horizontal line at the humanoid's weight.
+    # # weight = model.body_subtreemass[1] * np.linalg.norm(model.opt.gravity)
+    # # plt.axhline(y=weight, color="green", linestyle="--")
+    # plt.xlabel("Angle offset (rad)")
+    # plt.ylabel("CoM error")
+    # plt.grid(which="major", color="#DDDDDD", linewidth=0.8)
+    # plt.grid(which="minor", color="#EEEEEE", linestyle=":", linewidth=0.5)
+    # plt.minorticks_on()
+    # # plt.title(
+    # #     f"Smallest CoM error " f"found at offset {np.rad2deg(best_offset):.4f}deg."
+    # # )
+    # # plt.show()
+
+    mujoco.mj_resetData(mjmodel, mjdata)
+    mujoco.mj_forward(mjmodel, mjdata)
+    
+    
+
+    # print(np.rad2deg(best_offset))
+
 # TODO: Create a custom generalized state for the model
 # TODO: Given the generalized state, place the model neatly on the ground
 # TODO: Greate a function that given a certain rotation of the torso decides on which limb (or even head) to balance and create the generalized state for that. that makes sure to have the CoM above the contact point
-
-
-# Maybe create a class of this robot with the functions to change state or randomly reinitialize etc.
-# state = [0, 0, 0, 0, 0] # angle of [torso, right_arm, left_arm, right_leg, left_leg]

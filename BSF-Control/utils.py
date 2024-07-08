@@ -39,7 +39,7 @@ def calc_vertical_offset(
     """
 
     # Determine point where the force on the 3rd degree-of-freedom (DoF) of the root joint is zero.
-    height_offsets = np.linspace(-0.001, 0.001, 2001)
+    height_offsets = np.linspace(-0.01, 0.01, 20001)
     vertical_forces = []
     for offset in height_offsets:
         mujoco.mj_resetDataKeyframe(model, data, keyframe)
@@ -74,3 +74,56 @@ def calc_vertical_offset(
         plt.show()
 
     return best_offset
+
+
+def arr2str(array) -> str:
+    str_array = ' '.join(map(str, array))
+    return str_array
+
+
+def euler2quat(radians: float, axis: list[float] = [0, 1, 0]):
+    qw = np.cos(radians/2)
+    qx = axis[0]*np.sin(radians/2)
+    qy = axis[1]*np.sin(radians/2)
+    qz = axis[2]*np.sin(radians/2)
+    return [qw, qx, qy, qz]
+
+
+def set_state(state: list[float], mjdata: MjData) -> None:
+    # qpos = [x, y, z, qw, qx, qy, qz, qrh, qlh, qrl, qll]
+    qpos = [0, 0, 0]
+    qpos += euler2quat(state[0])
+    qpos += state[1:]
+    mjdata.qpos = qpos
+    return None
+
+
+if __name__ == "__main__":
+    quat = euler2quat(np.deg2rad(90))
+    print(quat)
+
+
+
+# # Get gradient
+#     max_iterations = 1000
+#     h = 1e-2
+#     lr = 1e-25
+#     vertical_position = 0.2
+#     for i in range(max_iterations):
+#         mujoco.mj_resetData(mjmodel, mjdata)
+#         mujoco.mj_forward(mjmodel, mjdata)
+#         mjdata.qacc = 0
+       
+#         mjdata.qpos[2] = vertical_position
+#         mujoco.mj_inverse(mjmodel, mjdata)
+#         f0 = mjdata.qfrc_inverse[2]
+
+#         mjdata.qpos[2] = vertical_position + h
+#         mujoco.mj_inverse(mjmodel, mjdata)
+#         f1 = mjdata.qfrc_inverse[2]
+
+#         grad = (f1**2 - f0**2)/h
+
+#         vertical_position = vertical_position + lr*grad
+
+#         print(f"{f0=}\t\t{grad*lr=}\t\t{vertical_position=}")
